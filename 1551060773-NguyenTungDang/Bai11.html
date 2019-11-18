@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển trên form</title>
+	<script type="text/javascript"> 
+		function spawn() {
+            var gotId = document.getElementById('txtuser').value;
+            document.getElementById('spawn').innerHTML=""+ gotId;
+        }
+    </script>  
+    <style>
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>  
+</head>
+<body>
+	<h2 style="color: orange;" align="center">Đăng nhập</h2>
+	<form>
+		<table  style="background-color: #33E6FF;"  align="center">
+			<tr>
+                <td  align="right">Mã người dùng: </td>
+                <td ><input name="txtuser" type="text" id="txtuser" ></td>
+            </tr>
+            <tr>
+                <td  align="right">Mật khẩu: </td>
+                <td ><input name="txtpass" type="password" id="txtpass" ></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" onclick="spawn()" value="Đòng ý"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" id="spawn" style="color: blue;"><p></p></td>
+            </tr>                   	
+    	</table>
+	</form>
+</body>
+</html>

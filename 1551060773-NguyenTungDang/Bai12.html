@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển trên form</title>
+	<style>
+		table, th, td{
+			border: 1px solid blue;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: green;text-align: center;"><b>Phiếu đăng ký tham gia trương trình khuyến mãi</b></h1>
+	<form>
+		<table style="background-color:aquamarine;color: #00DD00;width: 600px" align="center">
+			<tr>
+				<td style="width: 200px">Họ và tên</td>
+				<td><input type="text" name="ho va ten" style="width: 350px"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="dia chi" style="width: 300px"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="dien thoai" style="width: 250px"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td><input type="radio" name="phai" value="Nam" checked="">Nam<input type="radio"
+					name="phai" value="Nu">Nu</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td><select name="nghe nghiep">
+						<option value="Bac si">Bác sĩ</option>
+						<option value="Ky su">Kỹ sư</option>
+						<option value="Giao vien">Giáo viên</option>
+						<option value="Khac">Khác</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td><select name="chon san pham tham gia" id="" size="4">
+						<option value="Kem danh rang">Kem đánh răng</option>
+						<option value="Bot giat">Bột giặt</option>
+						<option value="Dau goi dau">Dầu gội đầu</option>
+						<option value="Sua tam">Sữa tắm</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="text" style="width: 100px"></td>
+			</tr>
+			<tr>
+                <td colspan="2" align="center"><button type="button" onclick="thefunction() ">Dong y</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <div id="user" style="color: #ff33a4"></div>
+                </td>
+            </tr>
+ 			<table>
+ 				<script type="text/javascript">
+            		function thefunction() {
+                	document.getElementById("user").innerText = "Bạn đã đăng ký thành công";
+           	 		}
+        		</script>
+ 			</table>
+		</table>
+	</form>
+</body>
+</html>

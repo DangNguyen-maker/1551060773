@@ -1,0 +1,39 @@
+.gioiThieu{
+    list-style-type: square;
+}
+.deMuc{
+    color: #fff;
+    background-color: red;
+}
+.duongDan{
+    background-color: thistle;
+}.tieuDe{
+    text-align: center;
+    color: rgb(230, 40, 144);
+}
+section
+{
+     display: flex;
+}
+.anh{
+    flex: 30%;
+}
+.noiDung{
+    flex: 70%
+}
+th{
+	border: 1px solid purple;
+	background-color: #CC6600;
+	color: #FFFFFF
+}
+.trang{
+	background-color: #FFFFFF
+}
+td{
+	border: 1px solid purple;
+}
+table{	
+	border: 1px solid purple;
+	width: 80%;
+	border-collapse: collapse	
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	<style>
+		table, th, td{
+			border: 1px solid blue;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: #3395ff;text-align: center;"><b>Đăng ký du lịch</b></h1>
+	<form>
+		<table style="background-color: #f9e79f ;color: #2980b9;width: 600px" align="center">
+			<tr>
+				<td style="width: 200px">Họ và tên</td>
+				<td><input type="text" name="ho va ten" style="width: 350px"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="dia chi" style="width: 300px"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="dien thoai" style="width: 250px"></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" name="khach viet nam" checked="" ></td>
+			</tr>
+			<tr>
+                <td>Chọn tour</td>
+                <td><select name="chọnTour">
+                        <optgroup label="Miền Bắc">
+                            <option>Hà Nội - Hạ Long - Sapa</option>
+                            <option>>Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option>Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option>Huế - Bạch Mã - Đà Nẵng</option>
+                            <option>Nha Trang - Đà Lạt</option>
+                            <option>Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option>TPHCM - Cần Thơ - Cà Mau</option>
+                            <option>TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select></td>
+            </tr>
+            <tr>
+				<td>Phuong tien</td>
+				<td><input type="radio" name="phuong tien" value="May bay" checked="">May bay<input type="radio"
+					name="phuong tien" value="Xe o to">Xe ô tô</td>
+			</tr>
+			<tr>
+                <td colspan="2" align="center">
+                    <fieldset border="2" width="300px" height="55px" style="margin-left: 50px ; margin-right: 50px">
+                        <legend style="font-style: italic;color: red">Số lượng đoàn khách</legend>
+                        <label>Người lớn<input type="number"></label><label>Trẻ em<input type="number"></label>
+                    </fieldset>
+                </td>
+            </tr>
+			<tr>
+                <td>Ghi chú thêm</td>
+                <td ><textarea id="ghi chu" width="300px" ></textarea></td>
+            </tr>
+			<tr>
+                <td colspan="2" align="center"><button type="button" onclick="thefunction() ">Đồng ý</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <div id="user" style="color: red"></div>
+                </td>
+            </tr>
+ 			<table>
+ 				<script type="text/javascript">
+            		function thefunction() {
+                	document.getElementById("user").innerText = "Bạn đã đăng ký thành công!!!";
+           	 		}
+        		</script>
+ 			</table>
+    	</table>
+    </form>
+</body>
+</html>

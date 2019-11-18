@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tạo bảng, trộn dòng và cột</title>
+	<style>
+        body{
+        	font-family: Tahoma;
+            }
+        th{
+			border: 1px solid pink;
+			background-color: #CC0033;
+			color: #FFFFFF
+		}
+		td{
+			text-align: center;
+			border: 1px solid pink;
+		}
+		table{	
+			border: 1px solid pink;
+			width: 100%;
+			border-collapse: collapse
+			
+		}	
+    </style>
+</head>
+<body>
+	<h2 style="color: #C40033; font-size: 40px; text-align: center">Chương trình học - ngành lập trình</h2>
+	<table cellpadding="5">
+    	<tr>
+    		<th rowspan="2">Nhóm học phần</th>
+		    <th rowspan="2">Môn học</th>
+		    <th colspan="2">Số tiết</th>				    				    
+		</tr>		
+	 	<tr>
+		    <th>Lý thuyết</th>
+		    <th>thực hành</th>
+		</tr>
+		<tr>
+		    <td rowspan="6" style="color: #CC0033">I<br>Tin học văn phòng</td>
+		    <td style=" text-align: left;">Hệ điều hành Windows</td>
+		    <td>3</td>
+		    <td>5</td>
+		</tr>
+		<tr>		    
+		    <td style=" text-align: left;">Sử dụng Internet</td>
+		    <td>3</td>
+		    <td>5</td>
+		</tr>
+		<tr>		    
+		    <td style=" text-align: left;">Soạn thảo văn bản với MS Word</td>
+		    <td>24</td>
+		    <td>40</td>
+		</tr>
+		<tr>
+		    <td style=" text-align: left;">Tạo bài trình điễn vói MS PowerPoint</td>
+		    <td>9</td>
+		    <td>15</td>
+		</tr>
+		<tr>
+		    <td style=" text-align: left;">Xử lý số liệu với MS Excel</td>
+		    <td>24</td>
+		    <td>40</td>
+		</tr>
+		<tr>
+		    <td style=" text-align: left;">Tạo trang Web vói MS FrontPage</td>
+		    <td>9</td>
+		    <td>15</td>
+		</tr>
+		<tr>
+		    <td rowspan="2" style="color: #CC0033">II<br>Kỹ thuật lập trình (VB.NET)</td>
+		    <td style=" text-align: left;">Nhập môn lập trình</td>
+		    <td>36</td>
+		    <td>60</td>
+		</tr>
+		<tr>		    
+		    <td style=" text-align: left;">Kỹ thuật lập trình</td>
+		    <td>36</td>
+		    <td>60</td>
+		</tr>
+		<tr>
+		    <td colspan="4" style=" text-align: left;">.........</td>
+		</tr>
+	</table> 
+</body>
+</html>
